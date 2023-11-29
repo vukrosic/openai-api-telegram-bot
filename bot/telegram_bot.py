@@ -70,7 +70,7 @@ class ChatGPTTelegramBot:
         try:
             # Set up the invoice parameters
             payload = "custom_payload"  # You can customize this
-            provider_token = "284685063:TEST:MjI4MjI4NDU2ODRh"
+            provider_token = os.environ.get('PAYMENT_PROVIDER_TOKEN')
             currency = "USD"
 
             # Fetch payment options from environment variable
